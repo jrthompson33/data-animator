@@ -1,0 +1,73 @@
+{
+  "name": "data_animator",
+  "version": "1.0.0",
+  "description": "Data Animator, an authoring tool for animated infographics and data visualizations.",
+  "scripts": {
+    "build": "node build.js",
+    "server": "node build.js server",
+    "start": "node build.js dev watch",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "prettify": "prettier 'src/**/*.{ts,tsx}' 'sass/**/*.{scss,sass}'"
+  },
+  "author": "John Thompson (jrthompson@gatech.edu)",
+  "license": "ISC",
+  "dependencies": {
+    "@blueprintjs/core": "^3.24.0",
+    "@blueprintjs/icons": "^3.14.0",
+    "@blueprintjs/select": "^3.12.0",
+    "@blueprintjs/table": "^3.8.3",
+    "bootstrap-css-only": "^4.4.1",
+    "classnames": "^2.2.6",
+    "d3": "^5.7.0",
+    "file-saver": "^2.0.2",
+    "hammerjs": "^2.0.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-undo": "^1.0.1",
+    "rxjs": "^6.5.4",
+    "rxjs-compat": "^6.5.4",
+    "stats.js": "^0.17.0",
+    "three": "^0.115.0",
+    "three-bas": "^2.7.1",
+    "three-orbitcontrols": "^2.1.2",
+    "three.meshline": "^1.1.0",
+    "underscore": "^1.10.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "prettier --write",
+      "license-check-and-add"
+    ],
+    "*.{less}": [
+      "prettier --write",
+      "license-check-and-add"
+    ],
+    "*.{js,jsx}": "license-check-and-add"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/d3": "^5.7.0",
+    "@types/react": "^16.9.30",
+    "@types/react-dom": "^16.9.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "fs-extra": "^9.0.0",
+    "less": "^3.12.2",
+    "multirun": "^3.0.2",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.3",
+    "ts-loader": "^6.2.2",
+    "tslint": "^6.1.0",
+    "tslint-immutable": "^6.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "repository": "https://github.com/zcliu/DataAnimator.git"
+}

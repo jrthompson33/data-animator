@@ -1,0 +1,27 @@
+#pv-canvas,
+#pv-svg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#pv-svg {
+  position: absolute;
+}
+
+
+#pv-canvas {
+  pointer-events: none;
+  z-index: 0;
+}
+
+#pv-preview-canvas {
+  width: 100%;
+  height: 100%;
+  #pv-canvas-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
