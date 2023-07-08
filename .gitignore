@@ -1,0 +1,20 @@
+# compiled output
+dist
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Dependency directories
+node_modules/
+bower_components/
+package-lock.json
+
+# System Files
+.DS_Store
+Thumbs.db
